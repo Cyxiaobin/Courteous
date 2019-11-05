@@ -1,11 +1,18 @@
 package edu.swjtuhc.demo.model;
 
 public class SysUser {
+	private int UId;
 	private String username;
 	private String password;
 	private String name;
 	private String gender;
 	private int age;
+	public int getUId() {
+		return UId;
+	}
+	public void setUId(int uId) {
+		UId = uId;
+	}
 	public String getUsername() {
 		return username;
 	}
@@ -36,5 +43,4 @@ public class SysUser {
 	public void setAge(int age) {
 		this.age = age;
 	}
-
 }
