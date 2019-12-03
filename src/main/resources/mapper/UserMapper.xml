@@ -16,10 +16,14 @@
               values
               (#{username},#{password},#{name},#{age},#{gender})
               </insert>
+              
               <select id="selectUserByUsername" parameterType="java.lang.String">
               select * from sysuser where username =#{username}
               </select>
               
+              <select id="getALLUsers" parameterType="edu.swjtuhc.demo.mapper.UserMapper">
+              
+              </select>
               
               
         </mapper>
