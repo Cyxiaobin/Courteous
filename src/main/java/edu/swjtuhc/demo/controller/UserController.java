@@ -32,7 +32,7 @@ public class UserController {
 		
 		//调用service层
 		int i = userService.login(user);
-		log.put("state", i);
+		log.put("put", i);
 		return log;
 	}
 	

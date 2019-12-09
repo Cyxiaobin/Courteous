@@ -45,7 +45,7 @@ public class UserServicelmpl  implements UserService{
 		if (u0!=null) {
 			i = userMapper.insertUser(user);
 		} else {
-			System.err.println("用户名不存在或密码错误");
+			i = 2;
 		}
 		return i;
 	}
