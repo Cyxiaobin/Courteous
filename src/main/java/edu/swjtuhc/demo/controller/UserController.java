@@ -16,17 +16,24 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	
-	@RequestMapping("/register")
+	@RequestMapping("/register")//用户注册接口
 	public JSONObject register(@RequestBody SysUser user) {
 		JSONObject result = new JSONObject();
 		
 		//调用service层
 		int i =  userService.register(user);
 		result.put("state", i);
-		
 		return result;
 	}
 	
-	
+	@RequestMapping("/login")//用户登陆接口
+	public JSONObject login( @RequestBody SysUser user ) {
+		JSONObject log = new JSONObject();
+		
+		//调用service层
+		int i = userService.login(user);
+		log.put("state", i);
+		return log;
+	}
 	
 }

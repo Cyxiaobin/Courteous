@@ -33,4 +33,20 @@ public class UserServicelmpl  implements UserService{
 		}
 		return i;
 	}
+
+	@Override
+	public int login(SysUser user) {
+		// TODO Auto-generated method stub
+		
+		//调用mapper实现登陆
+		SysUser u0 =userMapper.selectUserByUsername(user.getUsername());
+		//先做判断 判断用户名是否存在 若存在再去调用mapper  若不存在 则输出用户名为空或密码错误
+		int i=-1; //先定义i的值
+		if (u0!=null) {
+			i = userMapper.insertUser(user);
+		} else {
+			System.err.println("用户名不存在或密码错误");
+		}
+		return i;
+	}
 }

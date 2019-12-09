@@ -9,12 +9,6 @@ public class SysUser {
 	private String avate;
 	private int age;
 	
-	
-	@Override
-	public String toString() {
-		return "SysUser [UId=" + UId + ", username=" + username + ", password=" + password + ", name=" + name
-				+ ", gender=" + gender + ", avate=" + avate + ", age=" + age + "]";
-	}
 	public int getUId() {
 		return UId;
 	}
@@ -56,5 +50,10 @@ public class SysUser {
 	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "SysUser [UId=" + UId + ", username=" + username + ", password=" + password + ", name=" + name
+				+ ", gender=" + gender + ", avate=" + avate + ", age=" + age + "]";
 	}
 }
