@@ -1,6 +1,7 @@
 package edu.swjtuhc.demo.servicelmpl;
+import java.util.List;
 
-
+import javax.management.Query;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,12 +18,8 @@ public class UserServicelmpl  implements UserService{
 
 	@Override
 	public int register(SysUser user) {
-		
 		// TODO Auto-generated method stub
-		
-		
 		//调用mapper实现注册
-		
 		SysUser u0 =userMapper.selectUserByUsername(user.getUsername());
 		//做判断 先去查询用户 如果为空再去调用mapper
 		int i=-1;                  //先定义i的值
@@ -37,10 +34,10 @@ public class UserServicelmpl  implements UserService{
 	@Override
 	public int login(SysUser user) {
 		// TODO Auto-generated method stub
-		
 		//调用mapper实现登陆
 		SysUser u0 =userMapper.selectUserByUsername(user.getUsername());
-		//先做判断 判断用户名是否存在 若存在再去调用mapper  若不存在 则输出用户名为空或密码错误
+		//先做判断 判断用户名是否存在 若存在再去调用mapper 
+		//若不存在 则输出用户名为空或密码错误
 		int i=-1; //先定义i的值
 		if (u0!=null) {
 			i = userMapper.insertUser(user);
@@ -48,5 +45,12 @@ public class UserServicelmpl  implements UserService{
 			i = 2;
 		}
 		return i;
+	}
+
+	@Override
+	//查询用户信息 返回一个表单
+	public List<Query> gtequeryList() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

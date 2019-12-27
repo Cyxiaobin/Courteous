@@ -6,18 +6,12 @@ public class SysUser {
 	private String password;
 	private String name;
 	private String gender;
-	private String avate;
 	private int age;
 	
 	public int getUId() {
 		return UId;
 	}
-	public String getAvate() {
-		return avate;
-	}
-	public void setAvate(String avate) {
-		this.avate = avate;
-	}
+	
 	public void setUId(int uId) {
 		UId = uId;
 	}
@@ -54,6 +48,6 @@ public class SysUser {
 	@Override
 	public String toString() {
 		return "SysUser [UId=" + UId + ", username=" + username + ", password=" + password + ", name=" + name
-				+ ", gender=" + gender + ", avate=" + avate + ", age=" + age + "]";
+				+ ", gender=" + gender + ", age=" + age + "]";
 	}
 }

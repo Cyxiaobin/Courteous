@@ -1,5 +1,7 @@
 package edu.swjtuhc.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,28 +14,34 @@ import net.sf.json.JSONObject;
 @RestController
 @RequestMapping("/user") //user接口
 public class UserController {
-	 
+	 //引入Service
 	@Autowired
 	UserService userService;
 	
 	@RequestMapping("/register")//用户注册接口
 	public JSONObject register(@RequestBody SysUser user) {
 		JSONObject result = new JSONObject();
-		
 		//调用service层
 		int i =  userService.register(user);
 		result.put("state", i);
 		return result;
 	}
 	
+	
 	@RequestMapping("/login")//用户登陆接口
 	public JSONObject login( @RequestBody SysUser user ) {
 		JSONObject log = new JSONObject();
-		
 		//调用service层
 		int i = userService.login(user);
 		log.put("put", i);
 		return log;
+	}
+	
+	@RequestMapping("/query")//管理员查询用户信息的接口
+	public List<SysUser> getList(){
+		//调用service层                                                                                             //待完成 还没有写完
+		
+		return null;
 	}
 	
 }
