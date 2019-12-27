@@ -1,7 +1,4 @@
 package edu.swjtuhc.demo.controller;
-
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,11 +34,6 @@ public class UserController {
 		return log;
 	}
 	
-	@RequestMapping("/query")//管理员查询用户信息的接口
-	public List<SysUser> getList(){
-		//调用service层                                                                                             //待完成 还没有写完
-		
-		return null;
-	}
+	
 	
 }

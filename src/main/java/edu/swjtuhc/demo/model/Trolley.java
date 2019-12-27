@@ -5,48 +5,48 @@ package edu.swjtuhc.demo.model;
 * 类说明
 */
 public class Trolley {
-	private String username;
-	private String addess;
-	private int money;
-	private String goods;
-	private int tid;
-	
-	public int getId() {
-		return tid;
+	private String userName;
+	private String Addess;
+	private int Money;
+	private int Age;
+	private int tId;
+	public String getUserName() {
+		return userName;
 	}
-	public void setId(int id) {
-		this.tid = id;
-	}
-	public String getUsername() {
-		return username;
-	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getAddess() {
-		return addess;
+		return Addess;
 	}
-	
 	public void setAddess(String addess) {
-		this.addess = addess;
+		Addess = addess;
 	}
 	public int getMoney() {
-		return money;
+		return Money;
 	}
 	public void setMoney(int money) {
-		this.money = money;
+		Money = money;
 	}
-	public String getGoods() {
-		return goods;
+	public int gettId() {
+		return tId;
 	}
-	public void setGoods(String goods) {
-		this.goods = goods;
+	public void settId(int tId) {
+		this.tId = tId;
 	}
 	
+	public int getAge() {
+		return Age;
+	}
+	public void setAge(int age) {
+		Age = age;
+	}
 	@Override
 	public String toString() {
-		return "Trolley [username=" + username + ", addess=" + addess + ", money=" + money + ", goods=" + goods
-				+ ", id=" + tid + "]";
+		return "Trolley [userName=" + userName + ", Addess=" + Addess + ", Money=" + Money + ", Age=" + Age + ", tId="
+				+ tId + "]";
 	}
+	
+	
 
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+       <mapper namespace="edu.swjtuhc.demo.mapper.QueryMapper">
+         <resultMap type="edu.swjtuhc.demo.model.Query" id="query_result">
+           <id column="q_id" property="qId" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+           <result column="username" property="userName" javaType="java.lang.String" jdbcType="VARCHAR"/>
+           <result column="password" property="passWord"  javaType="java.lang.String" jdbcType="VARCHAR"/>
+           <result column="name" property="Name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+           <result column="age" property="Age" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+           <result column="gender" property="Gender" javaType="java.lang.String" jdbcType="VARCHAR"/>
+         </resultMap>
+         
+          <select id="seleAllQueries"  resultMap="query_result">
+              select * from queryies
+          
+          </select>
+       </mapper>

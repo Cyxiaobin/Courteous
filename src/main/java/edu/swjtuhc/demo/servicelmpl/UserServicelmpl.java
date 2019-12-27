@@ -1,7 +1,4 @@
 package edu.swjtuhc.demo.servicelmpl;
-import java.util.List;
-
-import javax.management.Query;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,10 +44,5 @@ public class UserServicelmpl  implements UserService{
 		return i;
 	}
 
-	@Override
-	//查询用户信息 返回一个表单
-	public List<Query> gtequeryList() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 }
