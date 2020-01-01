@@ -1,9 +1,5 @@
 package edu.swjtuhc.demo.model;
-/**
-* @author 作者 ：李忠斌
-* @version 创建时间：2019年12月27日 下午3:38:55
-* 类说明
-*/
+
 public class Query {
 	private int qId;
 	private String userName;

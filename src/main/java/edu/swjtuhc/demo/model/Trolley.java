@@ -1,12 +1,9 @@
 package edu.swjtuhc.demo.model;
-/**
-* @author 作者 ：李忠斌
-* @version 创建时间：2019年12月10日 下午5:23:06
-* 类说明
-*/
+
 public class Trolley {
 	private String userName;
 	private String Addess;
+	private String Addess2;
 	private int Money;
 	private int Age;
 	private int tId;
@@ -41,10 +38,17 @@ public class Trolley {
 	public void setAge(int age) {
 		Age = age;
 	}
+	
+	public String getAddess2() {
+		return Addess2;
+	}
+	public void setAddess2(String addess2) {
+		Addess2 = addess2;
+	}
 	@Override
 	public String toString() {
-		return "Trolley [userName=" + userName + ", Addess=" + Addess + ", Money=" + Money + ", Age=" + Age + ", tId="
-				+ tId + "]";
+		return "Trolley [userName=" + userName + ", Addess=" + Addess + ", Addess2=" + Addess2 + ", Money=" + Money
+				+ ", Age=" + Age + ", tId=" + tId + "]";
 	}
 	
 	

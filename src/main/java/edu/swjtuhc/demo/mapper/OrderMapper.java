@@ -1,14 +1,14 @@
 package edu.swjtuhc.demo.mapper;
 
-import java.util.List;
-
 import org.apache.ibatis.annotations.Mapper;
 
 import edu.swjtuhc.demo.model.Trolley;
 
 
 @Mapper
-public interface TrolleyMapper {
-	public List<Trolley> selectAllTrolleys();
+public interface OrderMapper {
+
+	int inserorder(Trolley order);
+	//public int inserorder( Trolley order);
 
 }

@@ -23,6 +23,7 @@ public class TrolleyServiceImpl implements TrolleyService {
 	@Override
 	public List<Trolley> getTrolleyList() {
 		// TODO Auto-generated method stub
+		
 		return trollryMapper.selectAllTrolleys();
 	}
       

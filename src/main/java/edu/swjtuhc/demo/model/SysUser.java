@@ -50,4 +50,6 @@ public class SysUser {
 		return "SysUser [UId=" + UId + ", username=" + username + ", password=" + password + ", name=" + name
 				+ ", gender=" + gender + ", age=" + age + "]";
 	}
+
+	
 }
