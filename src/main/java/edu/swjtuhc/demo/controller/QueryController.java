@@ -10,11 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import edu.swjtuhc.demo.service.QueryService;
 
-/**
-* @author 作者 ：李忠斌
-* @version 创建时间：2019年12月27日 下午3:33:03
-* 类说明
-*/
+
 @RestController
 @RequestMapping("/query")
 public class QueryController {

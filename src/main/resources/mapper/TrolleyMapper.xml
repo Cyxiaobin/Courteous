@@ -16,9 +16,12 @@
 		<result column="money" property="Money"
 			javaType="java.lang.Integer" jdbcType="INTEGER" />
 	</resultMap>
+	
 
 	<select id="selectAllTrolleys" resultMap="trolley_result">
 		select * from trolley
 	</select>
+	
+	
 
 </mapper>

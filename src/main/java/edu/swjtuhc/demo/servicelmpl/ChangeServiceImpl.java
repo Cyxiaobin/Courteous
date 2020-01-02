@@ -14,10 +14,8 @@ public class ChangeServiceImpl implements ChangeService {
 	public Object modifyPassqord(String password, String newpassword, String username, HttpSession session) {
 		// TODO Auto-generated method stub
 		Map<String , Object> map =new HashMap<String, Object>();
-		if (password!=null) {
+		if (username!=null) {
 			User user=UserMapper.selectBypassword(password, username);
-			//获取用户的id
-			//Integer id=user.getId();
 			//数据库密码
 			 String yspassword=user.getPassword();
 			 if(yspassword.equals(password)){

@@ -33,4 +33,7 @@ public Object updatePassWord(String password,String newpassword,String username,
     return  map;
 
 }
+//修改用户名
+//@RequestMapping("/ChangeName")
+//public 
 }
